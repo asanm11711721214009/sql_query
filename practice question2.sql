@@ -6,6 +6,7 @@ create table departments (
   dept_id int primary key,
   department varchar(20)
 );
+
 insert into departments values
 (101, 'IT'),
 (102, 'HR'),
@@ -20,6 +21,7 @@ create table employees (
   hire_date date,
   foreign key (dept_id) references departments(dept_id)
 );
+
 
 insert into employees values
 (1,'Arun',101,45000,'2022-01-10'),
